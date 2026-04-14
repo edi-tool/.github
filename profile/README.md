@@ -20,6 +20,7 @@
 ### ⚙️ 業務効率化（Internal Tools）
 * **[QRコードさん: sku-to-qr](https://edi-tool.github.io/sku-to-qr/)**
     * 商品管理用のSKUコード等から、社内ECサイト等の個別ページへ飛ぶためのQRコードを生成します。
+      * ※QRコードは株式会社デンソーウェーブの登録商標です 
 
 ---
 
