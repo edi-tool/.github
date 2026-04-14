@@ -8,17 +8,17 @@
 ## 🛠 公開中のツール
 
 ### 📚 教育・学習支援
-* **[edu-kanji-checker](./edu-kanji-checker)**
+* **[edu-kanji-checker](https://edi-tool.github.io/edu-kanji-checker/)**
     * 入力したテキストが「小学校の何年生で習う漢字か」を瞬時に判別します。教材作成や副読本の校閲に。
-* **[kanji-checker](./kanji-checker)**
+* **[kanji-checker](https://edi-tool.github.io/kanji-checker/)**
     * PDF等のテキストから「常用外漢字」を抽出・指摘します。出版物の表記ガイドライン遵守をサポートします。
 
 ### 📖 出版・編集実務
-* **[page-count](./page-count)**
+* **[page-count](https://edi-tool.github.io/page-count/)**
     * 印刷・製本に欠かせない「台数」の計算と、概算の「背幅」を算出します。仕様設計の初期段階で重宝します。
 
 ### ⚙️ 業務効率化（Internal Tools）
-* **[sku-to-qr](./sku-to-qr)**
+* **[sku-to-qr](https://edi-tool.github.io/sku-to-qr/)**
     * 商品管理用のSKUコード等から、社内ECサイト等の個別ページへ飛ぶためのQRコードを生成します。
 
 ---
