@@ -13,19 +13,31 @@
     * PDF・Word 内の漢字を、小学校での学習学年別に分類して表示します。教材づくりやテキスト選定に。
 * **[常用漢字さん: kanji-checker](https://edi-tool.github.io/kanji-checker/)**
     * PDF・Word 内の常用漢字外（表外漢字）を検出し、文脈つきで指摘します。人名用漢字も判別します。
+* **[黒板補正さん: kokuban-adjust](https://edi-tool.github.io/kokuban-adjust/)**
+    * 斜めから撮った黒板・ホワイトボードの写真を、正面から見た長方形に補正します。
 
 ### 📖 出版・編集実務
 * **[表記統一さん: hyoki-checker](https://edi-tool.github.io/hyoki-checker/)**
-    * 文章中の表記ゆれを検出し、統一を提案します。辞書ベース／ファジー／形態素解析に対応。
+    * 文章中の表記ゆれを検出し、統一を提案します。辞書ベースと形態素解析（Beta）に対応。
 * **[ページ調整さん: page-count](https://edi-tool.github.io/page-count/)**
     * 暫定ページ数から台割りに合うページ数を提案し、背幅を概算します。入稿前の確認に。
+* **[二次元コードさん: sku-to-qr](https://edi-tool.github.io/sku-to-qr/)**
+    * SKU番号から商品ページの二次元コードを作成します。印刷物への配置を想定した設定です。
 
 ---
 
-## 🧪 検討中のツール
+## 🧪 開発中・検討中のツール
 
+* **[作図ツール: D-shape](https://github.com/edi-tool/D-shape)**
+    * 算数プリント用の図形をSVGで作成するツール。現在はリポジトリのみ公開で、Webページは未公開です。
 * **印税シミュレーター**
     * 著者や版元の情報を含まない、安全な計算機。
+
+---
+
+## 🌐 ポータル
+
+公開中のツールは [https://edi-tool.github.io/](https://edi-tool.github.io/) から一覧できます。
 
 ---
 
