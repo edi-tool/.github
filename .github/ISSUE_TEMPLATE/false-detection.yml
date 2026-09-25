@@ -1,0 +1,23 @@
+name: 誤判定の報告
+description: 判定・計算結果がおかしいときの報告（原稿の本文は貼らないでください）
+labels: [誤判定]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: ツール名
+      placeholder: 例）常用漢字さん（kanji-checker）
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 誤判定の内容
+      description: 該当の文字・数値と、期待した結果。原稿の全文や個人情報は書かないでください。
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 使った環境
+      placeholder: 例）iPhone Safari / Windows Chrome、PDF（作成元アプリ）

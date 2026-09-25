@@ -1,0 +1,20 @@
+name: 不具合の報告
+description: 画面が動かない・表示が崩れるなど
+labels: [bug]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: ツール名
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順と起きたこと
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 使った環境（端末・ブラウザ）
