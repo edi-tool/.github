@@ -44,3 +44,10 @@ test('alt のない img と viewport 欠落は失敗し、package.json の ignor
   assert.equal(r.status, 0, r.stderr);
   assert.match(r.stderr, /除外中/);
 });
+
+test('_config.yml の url と同じホストへの絶対 URL は外部ホスト扱いしない', () => {
+  const html = `${OK_HEAD}<link rel="icon" href="https://example.github.io/favicon.png"></head></html>`;
+  assert.equal(run({ 'index.html': html }).status, 1);
+  const r = run({ 'index.html': html, '_config.yml': 'url: "https://example.github.io"\n' });
+  assert.equal(r.status, 0, r.stderr);
+});
