@@ -1,0 +1,12 @@
+{
+  "name": "edi-tool-dotgithub",
+  "private": true,
+  "description": "edi-tool 共通テンプレートと開発原則",
+  "type": "module",
+  "scripts": {
+    "test": "node --test templates/scripts/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
