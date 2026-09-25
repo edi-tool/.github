@@ -46,5 +46,13 @@
 2.  **Practicality:** 実際の編集・教育のワークフローに基づいた機能であること。
 3.  **Openness:** MITライセンスによるオープンソース公開を行い、知見を共有すること。
 
+判定基準・出典の明示、取得失敗を「該当なし」と表示しないこと、外部送信の扱いなどの詳細は
+[開発原則（PRINCIPLES.md）](https://github.com/edi-tool/.github/blob/main/PRINCIPLES.md) にまとめています。
+誤判定や不具合は、各ツールのリポジトリの Issue からお知らせください（原稿の本文は貼らないでください）。
+
+## 🔗 関連
+* [surf90](https://github.com/surf90) — ライフセービング・海辺の安全のためのツール
+* [napple02](https://github.com/napple02) — 開発者のプロフィール
+
 ## 📄 ライセンス
 本組織で公開されているリポジトリは、特に指定がない限り **MIT License** の下で提供されています。
