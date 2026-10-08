@@ -15,6 +15,8 @@
     * PDF・Word 内の常用漢字外（表外漢字）を検出し、文脈つきで指摘します。人名用漢字も判別します。
 * **[黒板補正さん: kokuban-adjust](https://edi-tool.github.io/kokuban-adjust/)**
     * 斜めから撮った黒板・ホワイトボードの写真を、正面から見た長方形に補正します。
+* **[図形作成さん: zukei-drafter](https://edi-tool.github.io/zukei-drafter/)**
+    * 数値入力から2D・3D図形を生成し、高解像度PNGやSVGとして保存します。教材・プリントの図版づくりに。
 
 ### 📖 出版・編集実務
 * **[表記統一さん: hyoki-checker](https://edi-tool.github.io/hyoki-checker/)**
