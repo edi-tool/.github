@@ -2,6 +2,8 @@
 // 各ツールのリポジトリにコピーした共通ファイルが、templates/ の原本と一致しているかを確認する（ローカル用）。
 // 使い方: node tools/check-template-sync.mjs ../kanji-checker ../page-count ...
 // 改行コードの違い（CRLF / LF）は無視する。
+// あわせて、AGENTS.md と CLAUDE.md が両方あるリポジトリでは CLAUDE.md が `@AGENTS.md` を取り込んでいるかを見る
+// （Claude Code は CLAUDE.md があると AGENTS.md を自動では読まないため、別々に書くと規則が片方にしか届かない）。
 import { readFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -17,6 +19,14 @@ for (const repo of process.argv.slice(2)) {
     if (!existsSync(target)) continue; // 使っていないリポジトリもある
     if (norm(target) !== norm(join(TEMPLATES, original))) {
       console.error(`差分あり: ${target}（原本: templates/${original}）`);
+      drift++;
+    }
+  }
+  const claudeMd = join(repo, 'CLAUDE.md');
+  if (existsSync(claudeMd) && existsSync(join(repo, 'AGENTS.md'))) {
+    const first = norm(claudeMd).split('\n').find((line) => line.trim() !== '');
+    if (first?.trim() !== '@AGENTS.md') {
+      console.error(`取り込みなし: ${claudeMd} の先頭行を @AGENTS.md にする（原本: templates/CLAUDE.template.md）`);
       drift++;
     }
   }

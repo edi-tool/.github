@@ -1,6 +1,7 @@
 # REPO
 
 （1行説明）公開URL: https://edi-tool.github.io/REPO/
+`CLAUDE.md` はこのファイルを取り込むだけなので、エージェント共通の規則はここに書く。
 
 ## 実行コマンド
 
@@ -14,3 +15,5 @@
 - ファイルを外部送信しない設計を崩さない。外部依存を増やしたら README の「データの扱い」を更新する。
 - 判定データを変えたら、出典と照合し、テストの期待値と README の件数を同時に更新する。
 - `scripts/check-static.mjs` と `tests/helpers.js` は edi-tool/.github の原本からのコピー。直すときは原本も直し、`node tools/check-template-sync.mjs ../各リポジトリ` で一致を確認する。
+- 軽微な修正での push 禁止。ローカルサーバーで検証し、複数修正を1コミットに集約する（GitHub Actions 節約）。
+- セッション終了時に `progress.md` を更新。

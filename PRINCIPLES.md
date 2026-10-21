@@ -34,5 +34,6 @@ edi-tool のツールは、教育書の編集・学校現場で「あったら�
 - 変更は `CHANGELOG.md`（Keep a Changelog 形式）に記録し、節目で GitHub Releases のタグを打つ。
 - CI は `templates/workflows/ci-static.yml` を基本にする。テストは Node 標準の `node:test` を使い、npm 依存を増やさない。
 - 開発用ドキュメント（`CLAUDE.md` / `AGENTS.md` / `DESIGN.md` / `progress.md` / `CHANGELOG.md` / `tests/` など）は `_config.yml` の `exclude` で公開ビルドから外す。
+- AI エージェント向けの規則は `AGENTS.md`（`templates/AGENTS.template.md`）を正本にし、`CLAUDE.md` は `@AGENTS.md` の1行で取り込む（`templates/CLAUDE.template.md`）。Claude Code は `CLAUDE.md` があると `AGENTS.md` を自動では読まないため、2 ファイルに別々に書くと片方のエージェントにだけ規則が届かなくなる。`tools/check-template-sync.mjs` が検査する。
 - 1 コミット 1 目的。生成物がある場合は原本と分け、CI で生成漏れを検出する。
 - 秘密情報（API キー、トークン）をコードに書かない。
