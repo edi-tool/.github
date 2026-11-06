@@ -25,6 +25,8 @@
     * 暫定ページ数から台割りに合うページ数を提案し、背幅を概算します。入稿前の確認に。
 * **[配色さん: color-palette](https://edi-tool.github.io/color-palette/)**
     * 印象語から方向性の違う配色を見比べ、AIに渡す配色指示文をコピーします。表紙・チラシ・教材の色決めに（試作版）。
+* **[文字数集計さん: moji-counter](https://edi-tool.github.io/moji-counter/)**
+    * 文章を貼るだけで文字数をすぐ集計します。改行・空白を除く数、上限の残り、原稿用紙換算に対応。
 * **[二次元コードさん: sku-to-qr](https://edi-tool.github.io/sku-to-qr/)**
     * SKU番号から商品ページの二次元コードを作成します。社内利用を想定しているため、ハブページ（edi-tool.github.io）には掲載していません。
 
