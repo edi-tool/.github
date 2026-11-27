@@ -45,5 +45,5 @@ npm run check                # HTML の静的チェック
 
 ## ライセンス
 
-MIT License © 2026 ISHIKAWA, Natsuki
+Apache License 2.0 © 2026 ISHIKAWA, Natsuki
 第三者ライブラリはそれぞれのライセンスに従います（…）。
