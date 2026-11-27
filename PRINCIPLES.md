@@ -38,3 +38,8 @@ edi-tool のツールは、教育書の編集・学校現場で「あったら�
 - AI エージェント向けの規則は `AGENTS.md`（`templates/AGENTS.template.md`）を正本にし、`CLAUDE.md` は `@AGENTS.md` の1行で取り込む（`templates/CLAUDE.template.md`）。Claude Code は `CLAUDE.md` があると `AGENTS.md` を自動では読まないため、2 ファイルに別々に書くと片方のエージェントにだけ規則が届かなくなる。`tools/check-template-sync.mjs` が検査する。
 - 1 コミット 1 目的。生成物がある場合は原本と分け、CI で生成漏れを検出する。
 - 秘密情報（API キー、トークン）をコードに書かない。
+
+## 6. ライセンスと帰属表示
+
+- [ライセンス運用方針](LICENSING.md) に従う。第三者のコード・データ・素材について、出典とライセンスを採用前に確認し、必要な全文・帰属表示を配布物に含める。
+- 新規ツールでは LICENSE・NOTICE と README の適用範囲を整備し、公開ビルドにも必要なライセンス情報を含める。

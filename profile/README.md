@@ -63,4 +63,6 @@
 * [napple02](https://github.com/napple02) — 開発者のプロフィール
 
 ## 📄 ライセンス
-特に指定がない限り、プログラム・ソースコードは **Apache License 2.0**、独自のマニュアル・解説記事は **CC BY 4.0** の下で提供されています。名称・ロゴは **All Rights Reserved** とし、第三者の著作物には各ライセンスが適用されます。
+特に指定がない限り、プログラム・ソースコードは **[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)**、独自のマニュアル・解説記事は **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** の下で提供されています。名称・ロゴは **All Rights Reserved** とし、第三者の著作物には各ライセンスが適用されます。
+
+詳細は [ライセンス運用方針](https://github.com/edi-tool/.github/blob/main/LICENSING.md) を参照してください。
