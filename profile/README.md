@@ -23,7 +23,7 @@
     * 文章中の表記ゆれを検出し、統一を提案します。辞書ベースと形態素解析（Beta）に対応。
 * **[ページ調整さん: page-count](https://edi-tool.github.io/page-count/)**
     * 暫定ページ数から台割りに合うページ数を提案し、背幅を概算します。入稿前の確認に。
-* **[立体書影さん: book_mockup](https://edi-tool.github.io/book_mockup/)**
+* **[立体書影さん: book-mockup](https://edi-tool.github.io/book_mockup/)**
     * 印刷用の展開カバーPDFから、判型と背幅どおりの立体書影を透過PNGで作ります。EC・販促用の書影づくりに。
 * **[配色提案さん: color-palette](https://edi-tool.github.io/color-palette/)**
     * 印象語から方向性の違う配色を見比べ、AIに渡す配色指示文をコピーします。表紙・チラシ・教材の色決めに（試作版）。
