@@ -24,3 +24,25 @@ Copyright 2026 ISHIKAWA, Natsuki
 - ビルド後の配布物（静的サイト・JS バンドル等）にも必要な LICENSE・NOTICE と第三者のライセンスを含める。依存関係更新時も確認する。
 - 過去に MIT 等で公開した版の許諾は変更しない。アーカイブ済みリポジトリは各リポジトリの表示に従う。
 - 不明な権利条件は推測で上書きせず、採用・配布前に確認する。
+
+## 公開サイトとソースコードの表示（2026-11-27）
+
+公開サイトのフッターは著作権表示と [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) の公式リンクを基本とする。ツール一覧への導線と個別に必要な第三者の表示は維持する。NOTICE や CC BY・名称／ロゴの詳細はリポジトリ側で確認できるようにし、フッターにライセンスの説明を重ねない。追跡パラメータは付けない。
+
+独自開発の HTML は DOCTYPE の直後（Jekyll のフロントマターより後）、独自開発の JavaScript はファイル冒頭（shebang が必要ならその後）に、次の情報をコメントとして記載する。
+
+```html
+<!--
+SPDX-License-Identifier: Apache-2.0
+Copyright 2026 ISHIKAWA, Natsuki
+Project: edi-tool
+Source: https://github.com/edi-tool
+Applies to original code; third-party materials and separately licensed content retain their terms.
+-->
+```
+
+JS / MJS では同じ内容をブロックコメントにする。新規ファイルの著作権年は作成年に合わせ、既存の著作権表示を機械的に上書きしない。第三者コード、混合ライセンスのデータ、生成ファイル、検証用ファイルは一律に Apache-2.0 と表示しない。生成物に必要な表示は生成元から付与する。
+
+AI によるソース取得時にも開発元・利用条件を伝えるための措置であり、AI が条件を遵守することや独自実装・無断複製を技術的に阻止することを保証しない。画面上の出典表示を追加の利用条件とするものでもない。公開ビルドでコメントや必要なライセンスファイルが失われていないか、配信後に確認する。
+
+実施経緯と検証範囲：[2026-11-27 ライセンス整備記録](records/2026-11-27-licensing.md)。
